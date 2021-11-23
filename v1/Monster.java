@@ -1,5 +1,4 @@
 /**
-  GO OVER THIS!!!
   class Monster -- Represents random incarnations of
   the adventurer's natural enemy in Ye Olde RPG
 **/
