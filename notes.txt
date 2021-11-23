@@ -3,7 +3,6 @@ QCC:
 
 DISCO:
 - Extending Protagonist and Monster from the Character class:
-    - The game works (or appears to work) properly when the methods needed are built out.
     - If the Character class is created but there is no body, the game ends after the user states their name.
     - If there is no Character class, the game also ends after the user states their name.
 
