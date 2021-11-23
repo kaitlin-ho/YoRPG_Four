@@ -1,19 +1,16 @@
 /**********************************************
- * class YoRPG -- Driver file for Ye Olde Role Playing Game.
- * Simulates monster encounters of a wandering adventurer.
- * Required classes: Protagonist, Monster
- *
- * USAGE:
- * Compile. Note messages generated.
- * Devise a plan of attack with your trio.
- * Code incrementally, testing each bit of new functionality as you go.
- * The only modification you should make to this driver file is moving comment bar down in main method, and filling in DISCO/QCC
- * (If you feel other changes are merited, note what and why, so that we may discuss on the 'morrow.)
+ * Four: Kaitlin Ho, Jing Yi Feng, Fang Chen
+ * APCS
+ * L01: An Adventurer is You!
+ * 2021-11-22
+ * time spent: 1
  *
  * DISCO:
- *
+ * - In notes.txt
  * QCC:
- * - What does try/catch do? IOException e?
+ * - What does extend do? How is Character useful for this instance?
+ * - There are multiple methods that have the same name in Character and Monster/Protagonist, do they conflict with each other?
+ *	Which one is used when YoRPG calls upon them (since Protagonist/Monster is a subclass of Character)?
  *
  **********************************************/
 
