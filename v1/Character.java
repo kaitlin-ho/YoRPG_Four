@@ -1,5 +1,5 @@
 public class Character {
-  /*
+
   public int HP;
   public int strength;
   public int defense;
@@ -33,5 +33,5 @@ public class Character {
     
     return damage;
   }
-*/
+
 }
