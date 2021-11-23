@@ -167,7 +167,6 @@ public class YoRPG {
 
     //loading...
     YoRPG game = new YoRPG();
-    /*================================================
     int encounters = 0;
     while( encounters < MAX_ENCOUNTERS ) {
     if ( !game.playTurn() )
@@ -176,7 +175,6 @@ public class YoRPG {
     System.out.println();
     }
     System.out.println( "Thy game doth be over." );
-	  ================================================*/
   }//end main
 
 }//end class YoRPG
