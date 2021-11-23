@@ -17,6 +17,8 @@ public class Character {
   
   }
   
-  public int attack
+  public int attack (Character name) {
+  
+  }
 
 }
