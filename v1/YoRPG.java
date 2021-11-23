@@ -17,8 +17,8 @@
  *
  **********************************************/
 
-import java.io.Reader;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class YoRPG {
 
