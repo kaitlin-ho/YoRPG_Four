@@ -1,4 +1,4 @@
 # TNPG: Team Four
 
 Roster: Fang Chen, Kaitlin Ho, Jing Yi Feng
-        Ducks: Cat, Apple, 
+Ducks: Cat, Apple, Peanut
