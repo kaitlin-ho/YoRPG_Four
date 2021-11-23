@@ -1,5 +1,5 @@
 /**********************************************
- * Four: Kaitlin Ho, Jing Yi Feng, Fang Min Chen
+ * Four: Kaitlin Ho, Jing Yi Feng, Fang Chen
  * APCS
  * L01: An Adventurer is You!
  * 2021-11-22
