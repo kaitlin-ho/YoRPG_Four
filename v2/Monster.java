@@ -6,10 +6,12 @@
 public class Monster extends Character {
 
   // ~~~~~~~~~~~ INSTANCE VARIABLES ~~~~~~~~~~~
-  private int _hitPts;
-  private int _strength;
-  private int _defense;
-  private double _attack;
+  // private int _hitPts;
+  // private int _strength;
+  // private int _defense;
+  // private double _attack;
+  //
+  // Character contains these attributes already
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
