@@ -5,20 +5,33 @@ public class Character {
   public int defense;
   public double attack;
   
-  public boolean isAlive() {
+  public Character() {
+    HP = 125;
+    strength = 100;
+    defense = 40;
+    attack = .4;
+  }
   
+  public boolean isAlive() {
+    return HP > 0;
   }
   
   public int getDefense() {
-  
+    return defense;
   }
   
   public int lowerHP(int dmg) {
-  
+    HP = HP - dmg;
   }
   
   public int attack (Character name) {
-  
+    int damage = (int) (strength * attack) - name.getDefense() );
+    
+    if (damage < 0) {damage = 0;}
+    
+    name.lowerHP( damage );
+    
+    return damage;
   }
 
 }
