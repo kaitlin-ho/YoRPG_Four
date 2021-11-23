@@ -3,7 +3,7 @@ QCC:
 
 DISCO:
 - Extending Protagonist and Monster from the Character class:
-    - If the Character class is created but there is no body, the game ends after the user states their name.
+    - If the Character class is created but there is no body, the game ends after the user states their name. "Nothing to see here. Move along!" is displayed twice, followed by "Thy game doth over."
     - If there is no Character class, the game also ends after the user states their name.
 
 Misc:
