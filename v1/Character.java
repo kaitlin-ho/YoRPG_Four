@@ -25,7 +25,7 @@ public class Character {
   }
   
   public int attack (Character name) {
-    int damage = (int) (strength * attack) - name.getDefense() );
+    int damage = (int) ((strength * attack) - name.getDefense());
     
     if (damage < 0) {damage = 0;}
     
