@@ -17,8 +17,8 @@
  *
  **********************************************/
 
-import java.io.Reader;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class YoRPG {
 
@@ -167,13 +167,16 @@ public class YoRPG {
 
     //loading...
     YoRPG game = new YoRPG();
+	  
     int encounters = 0;
+	  
     while( encounters < MAX_ENCOUNTERS ) {
-    if ( !game.playTurn() )
-    break;
-    encounters++;
-    System.out.println();
+    	if ( !game.playTurn() )
+    		break;
+    	encounters++;
+    	System.out.println();
     }
+	  
     System.out.println( "Thy game doth be over." );
   }//end main
 
