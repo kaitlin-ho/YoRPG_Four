@@ -2,7 +2,9 @@ QCC:
 - What is a subclass/superclass, and how do they work with each other? 
 
 DISCO:
-- 
+- Extending Protagonist and Monster from the Character class:
+    - The game works (or appears to work) properly when the methods needed are built out.
+    - If the Character class is created but there is no body, the game ends after the user states their name.
 
 Misc:
 - 
