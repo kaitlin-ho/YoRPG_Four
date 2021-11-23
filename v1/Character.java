@@ -20,7 +20,7 @@ public class Character {
     return defense;
   }
   
-  public int lowerHP(int dmg) {
+  public void lowerHP(int dmg) {
     HP = HP - dmg;
   }
   
