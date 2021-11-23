@@ -3,7 +3,7 @@
   class Protagonist -- protagonist of Ye Olde RPG
   **/
 
-public class Protagonist {
+public class Protagonist extends Character {
 
     // ~~~~~~~~~~~ INSTANCE VARIABLES ~~~~~~~~~~~
     private String _name = "J. Doe";
