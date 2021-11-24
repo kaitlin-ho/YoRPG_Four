@@ -34,7 +34,7 @@ public class YoRPG {
   private int moveCount;
   private boolean gameOver;
   private int difficulty;
-private int classChoice;
+  private int classChoice;
 
   private InputStreamReader isr;
   private BufferedReader in;
@@ -103,12 +103,14 @@ catch (IOException e) { }
     //instantiate the player's character
     pat = new Protagonist( name );
 
+   if (classChoice == 1) {
+pat = new Mage(name);
+  }
+	  
   }//end newGame()
 	  
 	
-	  if (classChoice == 1) {
-	  	pat = new Mage(name);
-	  }
+ 
 
 
 
