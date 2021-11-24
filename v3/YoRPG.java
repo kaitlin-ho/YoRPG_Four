@@ -6,14 +6,15 @@
  * time spent: 
  *
  * DISCO:
- * -
- * QCC:
+ * 00: You can initialize a variable of a different type with an object created from a subclass of that type.
  * 
+ * QCC:
+ * 00: How can we implement the different Monster subclasses into the newGame()? 
  *
  
  OUR DRIVER MODS:
- - 
- -
+ - Created Monster and Protagonist subclasses
+ - Updated newClass() to add in role choices
  
  **********************************************/
 
