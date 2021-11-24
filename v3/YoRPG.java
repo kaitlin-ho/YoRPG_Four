@@ -3,7 +3,7 @@
  * APCS
  * L01: An Adventurer is You!
  * 2021-11-23
- * time spent: 
+ * time spent: 2 hr
  *
  * DISCO:
  * 00: You can initialize a variable of a different type with an object created from a subclass of that type.
