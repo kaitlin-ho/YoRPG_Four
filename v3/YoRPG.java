@@ -79,18 +79,19 @@ public class YoRPG {
     catch ( IOException e ) { }
 
 	  
-// CHOOSING CLASS
-s = "Choose your class:\n";
-	  s += "1: Mage\n";
-	  s += "2: Tank\n";
-	  //add more
-	  System.out.print(s);
-	  
-try {
-	classChoice = Integer.parseInt( in.readLine());
-}
-catch (IOException e) { }
-	  
+    // CHOOSING CLASS
+    s = "Choose your class:\n";
+  	  s += "1: Mage\n";
+  	  s += "2: Tank\n";
+      s += "3: Brawler\n";
+  	  //add more
+  	  System.out.print(s);
+    	  
+    try {
+    	classChoice = Integer.parseInt( in.readLine());
+    }
+    catch (IOException e) { }
+    	  
 	  //NAME
     s = "Intrepid protagonist, what doth thy call thyself? (State your name): ";
     System.out.print( s );
@@ -103,9 +104,15 @@ catch (IOException e) { }
     //instantiate the player's character
     pat = new Protagonist( name );
 
-   if (classChoice == 1) {
-pat = new Mage(name);
-  }
+    if (classChoice == 1) {
+      pat = new Mage(name);
+    }
+    if (classChoice == 2) {
+      pat = new Tank(name);
+    }
+    if (classChoice == 3) {
+      pat = new Brawler(name);
+    }
 	  
   }//end newGame()
 	  
