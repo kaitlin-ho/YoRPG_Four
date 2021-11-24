@@ -8,10 +8,10 @@ public class Mage extends Protagonist{
   */
   
   public Mage() {
-        _hitPts = 70;
-        _strength = 70;
-        _defense = 10;
-        _attack = .75;
+    _hitPts = 70;
+    _strength = 70;
+    _defense = 10;
+    _attack = .75;
   }
   
   public Mage( String name ) {

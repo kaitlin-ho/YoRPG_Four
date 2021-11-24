@@ -28,6 +28,7 @@ public class Character {
     name.lowerHP( _damage );
     
     return _damage;
+    
   }
 
 }
