@@ -1,4 +1,4 @@
-public class Tank{
+public class Tank extends Protagonist {
 
   //stats initialization
   public Tank(){
