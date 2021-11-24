@@ -5,7 +5,7 @@ public class Brawler extends Protagonist {
     _hitPts = 100;
     _strength = 50;
     _defense = 12;
-    _attack = .5;
+    _attack = .6;
   }
   
   public Brawler(String name) {
@@ -18,12 +18,12 @@ public class Brawler extends Protagonist {
   }
   
   public void specialize(){
-    _attack = .6;
+    _attack = .7;
     _defense = 15;
   }
   
   public void normalize(){
-    _attack = .5;
+    _attack = .6;
     _defense = 12;
   }
   

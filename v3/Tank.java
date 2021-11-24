@@ -23,7 +23,7 @@ public class Tank extends Protagonist {
   }
   
   public void normalize(){
-    _defense = 20
+    _defense = 20;
   }
   
 

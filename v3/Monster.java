@@ -19,7 +19,7 @@ public class Monster extends Character {
     _hitPts = 150;
     _strength = 20 + (int)( Math.random() * 45 ); // [20,65)
     _defense = 20;
-    _attack = 1;
+    _attack = .4;
   }
 
   // Inheritted Methods:
