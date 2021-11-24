@@ -19,6 +19,10 @@ public class Mage extends Protagonist{
     _name = name;
   }
   
+  public static String about(){
+    return "High attack at the cost of low HP and low defense."; 
+  }
+  
   //prepare for special attack
   public void specialize() {
       _attack = .90;
