@@ -16,10 +16,10 @@ public class Protagonist extends Character {
     post: initializes instance vars.
     **/
   public Protagonist() {
-      _hitPts = 125;
-      _strength = 100;
-      _defense = 40;
-      _attack = .4;
+    _hitPts = 125;
+    _strength = 100;
+    _defense = 40;
+    _attack = .4;
   }
 
 
@@ -29,8 +29,8 @@ public class Protagonist extends Character {
     post: initializes instance vars. _name is set to input String.
     **/
   public Protagonist( String name ) {
-      this();
-      _name = name;
+    this();
+    _name = name;
   }
 
 
@@ -46,14 +46,14 @@ public class Protagonist extends Character {
 
   //prepare a Protagonist for a special attack
   public void specialize() {
-      _attack = .75;
-      _defense = 20;
+    _attack = .75;
+    _defense = 20;
   }
 
   //revert to normal mode
   public void normalize() {
-      _attack = .4;
-      _defense = 40;
+    _attack = .4;
+    _defense = 40;
   }
 
 }//end class Protagonist
