@@ -82,7 +82,7 @@ public class YoRPG {
 // CHOOSING CLASS
 s = "Choose your class:\n";
 	  s += "1: Mage\n";
-	  //s += "2: Tank\n";
+	  s += "2: Tank\n";
 	  //add more
 	  System.out.print(s);
 	  
