@@ -4,9 +4,9 @@
 
 New classes:
 - Monster subclasses: Goblin, Giant, Zombie
-  - Goblin:  A monster subclass that has low hp and low defense, high damage.
-  - Zombie: A monster subclass that has average hp and average defense, does low damage.
-  - Giant: A monster subclass that has high hp and high defense, and does high damage.
+  - Goblin:  A monster subclass that has low HP and low defense, high damage.
+  - Zombie: A monster subclass that has average HP and average defense, does low damage.
+  - Giant: A monster subclass that has high HP and low defense, and does high damage.
 - Protagonist subclasses: Mage, Brawler, Tank
   - Mage: A protagonist subclass that has low hp and low defense, but makes up for it with high magic damage
   - Brawler: A protagonist subclass that has average hp, defense, and attack; the role is all-rounded, but doesn't have a special area of focus
