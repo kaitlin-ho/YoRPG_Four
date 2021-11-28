@@ -2,10 +2,10 @@ ublic class Giant extends Monster {
 
   //stats initialization
   public Giant(){
-    _hitPts = 50;
+    _hitPts = 100;
     _strength = 20;
-    _defense = 100;
-    _attack = 10;
+    _defense = 10;
+    _attack = .6;
   }
   
   public Giant(String name) {
@@ -14,16 +14,17 @@ ublic class Giant extends Monster {
   }
   
   public static String about(){
-    return "insert stuff";
+    return "high HP, low defense, high damage";
   }
   
   public void specialize(){
-    _hitPts += 25;
-    _defense = 50;
+    _attack = .70;
+    _defense = 5;
   }
   
   public void normalize(){
-    _defense = 20
+    _attack = .65;
+    _defense = 7;
   }
   
 
