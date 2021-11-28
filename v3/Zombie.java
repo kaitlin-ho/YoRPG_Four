@@ -2,10 +2,10 @@ ublic class Zombie extends Monster {
 
   //stats initialization
   public Zombie(){
-    _hitPts = 50;
+    _hitPts = 100;
     _strength = 20;
-    _defense = 100;
-    _attack = 10;
+    _defense = 11;
+    _attack = .5;
   }
   
   public Zombie(String name) {
@@ -14,16 +14,17 @@ ublic class Zombie extends Monster {
   }
   
   public static String about(){
-    return "insert stuff";
+    return "average HP, average defense, low damage";
   }
   
   public void specialize(){
-    _hitPts += 25;
+    _attack = .5;
     _defense = 50;
   }
   
   public void normalize(){
-    _defense = 20
+    _attack = .5;
+    _defense = 11;
   }
   
 
