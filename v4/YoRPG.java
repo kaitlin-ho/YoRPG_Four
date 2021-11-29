@@ -2,19 +2,16 @@
  * Four: Kaitlin Ho, Jing Yi Feng, Fang Chen
  * APCS
  * L01: An Adventurer is You!
- * 2021-11-23
- * time spent: 2 hr
+ * 2021-11-29
+ * time spent: 0.2 hr
  *
  * DISCO:
- * 00: You can initialize a variable of a different type with an object created from a subclass of that type.
  * 
  * QCC:
- * 00: How can we implement the different Monster subclasses into the newGame()? 
  *
  
  OUR DRIVER MODS:
- - Created Monster and Protagonist subclasses
- - Updated newClass() to add in role choices
+ - Implemented different Monster classes and their appearance.
  
  **********************************************/
 
@@ -138,19 +135,19 @@ public class YoRPG {
     else {
 	    System.out.println( "\nLo, yonder monster approacheth!" );
 
-	    monster_choice = (int)(Math.random()*3);
+	    monster_choice = (int)(Math.random()*100);
 	    
-	    if (monster_choice == 0){
+	    if (monster_choice <= 100 && monster_choice > 65){
 	    	smaug = new Zombie();
 		System.out.print(" It's a Zombie!");
 	    }
 	    
-	    if (monster_choice == 1){
+	    if (monster_choice > 15 && monster_choice <= 65){
 	    	smaug = new Goblin();
 		System.out.print(" It's a Goblin!");
 	    }
 	    
-	    if (monster_choice == 2){
+	    if (monster_choice <= 15){
 	    	smaug = new Giant();
 		System.out.print(" It's a Giant!");
 	    }
