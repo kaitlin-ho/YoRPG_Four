@@ -14,7 +14,12 @@ public class Giant extends Monster {
   
   public void specialize(){
     _attack = .99;
-    _defense = 1;
+    _defense = 50;
+  }
+  
+  public void normalize(){
+    _attack = .6;
+    _defense = 10;
   }
 
 }
