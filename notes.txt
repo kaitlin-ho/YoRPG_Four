@@ -3,7 +3,7 @@ APCS
 L01 - YoRPG
 
 QCC:
-- What is a subclass/superclass, and how do they work with each other? 
+- What is a subclass/superclass, and how do they work with each other? ANSWERED IN CLASS
 
 DISCO:
 - Extending Protagonist and Monster from the Character class:
