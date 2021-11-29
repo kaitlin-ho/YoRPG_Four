@@ -12,7 +12,7 @@
  
  OUR DRIVER MODS:
  - Implemented different Monster classes and their appearance.
- - Giant has a specialized attack (the other monsters do not) that has a 15% chance of triggering.
+ - Giant has a specialized attack (the other monsters do not) that has a 5% chance of triggering. 
  
  **********************************************/
 
@@ -176,7 +176,7 @@ public class YoRPG {
 	}
 
 	monster_att = (int)(Math.random()*100);
-	if (monster_choice <= 15 && monster_att >= 100){
+	if (monster_choice <= 15 && monster_att >= 5){
 		smaug.specialize();
 	}
 	else if (monster_choice <= 15 && monster_att >= 5) {smaug.normalize();}
