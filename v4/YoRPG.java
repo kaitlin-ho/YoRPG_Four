@@ -4,11 +4,7 @@
  * L01: An Adventurer is You!
  * 2021-11-29
  * time spent: 0.5 hr
- *
- * DISCO:
- * 
- * QCC:
- *
+
  
  OUR DRIVER MODS:
  - Implemented different Monster classes and their appearance.
