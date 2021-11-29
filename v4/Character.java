@@ -4,6 +4,7 @@ public class Character {
   public int _strength;
   public int _defense;
   public double _attack;
+  public int _maxHP;
   
   public Character() {
   }
