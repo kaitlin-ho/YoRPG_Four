@@ -8,9 +8,6 @@ public class Giant extends Monster {
     _attack = .6;
   }
   
-  public Giant() {
-  }
-  
   public static String about(){
     return "high HP, low defense, high damage";
   }

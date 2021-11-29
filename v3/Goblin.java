@@ -7,10 +7,7 @@ public class Goblin extends Monster {
     _defense = 20;
     _attack = .7;
   }
-  
-  public Goblin() {
-  }
-  
+
   public static String about(){
     return "low HP, low defense, high damage";
   }

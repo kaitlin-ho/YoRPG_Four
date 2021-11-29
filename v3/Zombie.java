@@ -8,9 +8,6 @@ public class Zombie extends Monster {
     _attack = .5;
   }
   
-  public Zombie() {
-  }
-  
   public static String about(){
     return "average HP, average defense, low damage";
   }
