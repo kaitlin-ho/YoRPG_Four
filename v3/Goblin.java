@@ -9,7 +9,6 @@ public class Goblin extends Monster {
   }
   
   public Goblin() {
-    this();
   }
   
   public static String about(){

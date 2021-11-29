@@ -9,7 +9,6 @@ public class Giant extends Monster {
   }
   
   public Giant() {
-    this();
   }
   
   public static String about(){

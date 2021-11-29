@@ -9,7 +9,6 @@ public class Zombie extends Monster {
   }
   
   public Zombie() {
-    this();
   }
   
   public static String about(){
