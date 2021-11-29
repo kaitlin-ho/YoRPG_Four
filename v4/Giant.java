@@ -9,7 +9,7 @@ public class Giant extends Monster {
   }
   
   public static String about(){
-    return "high HP, low defense, high damage";
+    return "High HP, low defense, high damage.";
   }
   
   public void specialize(){

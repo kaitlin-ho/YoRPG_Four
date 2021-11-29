@@ -9,7 +9,7 @@ public class Goblin extends Monster {
   }
 
   public static String about(){
-    return "low HP, low defense, high damage";
+    return "Low HP, low defense, high damage.";
   }
   
   public void specialize(){

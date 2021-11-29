@@ -9,7 +9,7 @@ public class Zombie extends Monster {
   }
   
   public static String about(){
-    return "average HP, average defense, low damage";
+    return "Average HP, average defense, low damage.";
   }
   
   public void specialize(){
