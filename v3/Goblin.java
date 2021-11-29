@@ -12,16 +12,6 @@ public class Goblin extends Monster {
     return "low HP, low defense, high damage";
   }
   
-  public void specialize(){
-    _attack = .8;
-    _defense = 10;
-  }
-  
-  public void normalize(){
-    _attack = .6;
-    _defense = 10;
-  }
-  
 
 }
 
