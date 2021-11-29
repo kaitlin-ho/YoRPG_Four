@@ -142,14 +142,17 @@ public class YoRPG {
 	    
 	    if (monster_choice == 0){
 	    	smaug = new Zombie();
+		System.out.println(" It's a Zombie!");
 	    }
 	    
 	    if (monster_choice == 1){
 	    	smaug = new Goblin();
+		System.out.println(" It's a Goblin!");
 	    }
 	    
 	    if (monster_choice == 2){
 	    	smaug = new Giant();
+		System.out.println(" It's a Giant!");
 	    }
 	    
 	    else {smaug = new Monster();}
