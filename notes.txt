@@ -5,10 +5,16 @@ L01 - YoRPG
 QCC:
 - What is a subclass/superclass, and how do they work with each other? ANSWERED IN CLASS
 
+
+
 DISCO:
 - Extending Protagonist and Monster from the Character class:
     - If the Character class is created but there is no body, the game ends after the user states their name. "Nothing to see here. Move along!" is displayed twice, followed by "Thy game doth over."
     - If there is no Character class/file at all, the game proceeds as normal.
-
+-Superclass is the parent class and subclasses are derived from the superclass which inherits the methods and contructors in the superclass.
+-To copy an existing file into another directory, you can do cp ./<path>/<name.java> ./<otherPath>
+-The keyword "extends" allows the subclass to inherit attributes from the superclass.
+-The try-catch statement allows code to test for errors while being executed. Code under "try" runs and if there is an exception, the code under "catch" runs.
+-
 Misc:
 - 

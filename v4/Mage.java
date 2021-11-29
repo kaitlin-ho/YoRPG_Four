@@ -33,7 +33,7 @@ public class Mage extends Protagonist{
   //revert to normal mode
   public void normalize() {
       _attack = .75;
-      _defense = 10;
+      _defense = 11;
   }
   
 }
