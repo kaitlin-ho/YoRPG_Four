@@ -9,6 +9,7 @@ public class Mage extends Protagonist{
   
   public Mage() {
     _hitPts = 70;
+    _maxHP = _hitPts;
     _strength = 70;
     _defense = 11;
     _attack = .75;
