@@ -121,22 +121,22 @@ public class YoRPG {
 
       s = "";
       if (manualChoice == 1) {
-        s += "\nMage: " + Mage.about();
+        s += "\nMage: " + Mage.about() + "\n";
       }
       if (manualChoice == 2) {
-        s += "\nTank: " + Tank.about();
+        s += "\nTank: " + Tank.about() + "\n";
       }
       if (manualChoice == 3) {
-        s += "\nBrawler: " + Brawler.about();
+        s += "\nBrawler: " + Brawler.about() + "\n";
       }
       if (manualChoice == 4) {
-        s += "\nZombie: " + Zombie.about();
+        s += "\nZombie: " + Zombie.about() + "\n";
       }
       if (manualChoice == 5) {
-        s += "\nGoblin: " + Goblin.about();
+        s += "\nGoblin: " + Goblin.about() + "\n";
       }
       if (manualChoice == 6) {
-        s += "\nGiant: " + Giant.about();
+        s += "\nGiant: " + Giant.about() + "\n";
       }
       if (manualChoice == 7) {
         isSmart = false;
