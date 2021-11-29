@@ -154,7 +154,7 @@ public class YoRPG {
 		System.out.print(" It's a Giant!");
 	    }
 	    
-	    else {smaug = new Monster();}
+	    //else {smaug = new Monster();}
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 
