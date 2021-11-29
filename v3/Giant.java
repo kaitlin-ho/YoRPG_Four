@@ -12,15 +12,5 @@ public class Giant extends Monster {
     return "high HP, low defense, high damage";
   }
   
-  public void specialize(){
-    _attack = .70;
-    _defense = 5;
-  }
-  
-  public void normalize(){
-    _attack = .65;
-    _defense = 7;
-  }
-  
 
 }
