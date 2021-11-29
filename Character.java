@@ -1,37 +1,33 @@
 public class Character {
 
-  public int HP;
-  public int strength;
-  public int defense;
-  public double attack;
+  public int _hitPts;
+  public int _strength;
+  public int _defense;
+  public double _attack;
   
   public Character() {
-    HP = 125;
-    strength = 100;
-    defense = 40;
-    attack = .4;
   }
   
   public boolean isAlive() {
-    return HP > 0;
+    return _hitPts > 0;
   }
   
   public int getDefense() {
-    return defense;
+    return _defense;
   }
   
   public void lowerHP(int dmg) {
-    HP = HP - dmg;
+    _hitPts = _hitPts - dmg;
   }
   
   public int attack (Character name) {
-    int damage = (int) ((strength * attack) - name.getDefense());
+    int _damage = (int) ((_strength * _attack) - name.getDefense());
     
-    if (damage < 0) {damage = 0;}
+    if (_damage < 0) {_damage = 0;}
     
-    name.lowerHP( damage );
+    name.lowerHP( _damage );
     
-    return damage;
+    return _damage;
   }
 
 }

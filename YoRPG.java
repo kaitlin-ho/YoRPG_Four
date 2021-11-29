@@ -2,16 +2,20 @@
  * Four: Kaitlin Ho, Jing Yi Feng, Fang Chen
  * APCS
  * L01: An Adventurer is You!
- * 2021-11-22
- * time spent: 1
+ * 2021-11-23
+ * time spent: 2 hr
  *
  * DISCO:
- * - In notes.txt
+ * 00: You can initialize a variable of a different type with an object created from a subclass of that type.
+ * 
  * QCC:
- * - What does extend do? How is Character useful for this instance?
- * - There are multiple methods that have the same name in Character and Monster/Protagonist, do they conflict with each other?
- *	Which one is used when YoRPG calls upon them (since Protagonist/Monster is a subclass of Character)?
+ * 00: How can we implement the different Monster subclasses into the newGame()? 
  *
+ 
+ OUR DRIVER MODS:
+ - Created Monster and Protagonist subclasses
+ - Updated newClass() to add in role choices
+ 
  **********************************************/
 
 import java.io.*;
@@ -31,6 +35,7 @@ public class YoRPG {
   private int moveCount;
   private boolean gameOver;
   private int difficulty;
+  private int classChoice;
 
   private InputStreamReader isr;
   private BufferedReader in;
@@ -74,6 +79,21 @@ public class YoRPG {
     }
     catch ( IOException e ) { }
 
+	  
+    // CHOOSING CLASS
+    s = "Choose your class:\n";
+  	  s += "1: Mage\n";
+  	  s += "2: Tank\n";
+      s += "3: Brawler\n";
+  	  //add more
+  	  System.out.print(s);
+    	  
+    try {
+    	classChoice = Integer.parseInt( in.readLine());
+    }
+    catch (IOException e) { }
+    	  
+	  //NAME
     s = "Intrepid protagonist, what doth thy call thyself? (State your name): ";
     System.out.print( s );
 
@@ -85,7 +105,21 @@ public class YoRPG {
     //instantiate the player's character
     pat = new Protagonist( name );
 
+    if (classChoice == 1) {
+      pat = new Mage(name);
+    }
+    if (classChoice == 2) {
+      pat = new Tank(name);
+    }
+    if (classChoice == 3) {
+      pat = new Brawler(name);
+    }
+	  
   }//end newGame()
+	  
+	
+ 
+
 
 
   /*=============================================
