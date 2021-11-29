@@ -130,13 +130,14 @@ public class YoRPG {
     int i = 1;
     int d1, d2;
     int monster_choice;
-    int monster_att;
+    int randomzier;
 
     if ( Math.random() >= ( difficulty / 3.0 ) )
 	    System.out.println( "\nNothing to see here. Move along!" );
     else {
 	    System.out.println( "\nLo, yonder monster approacheth!" );
 
+	    randomzier = (int)(Math.random()*100);
 	    monster_choice = (int)(Math.random()*100);
 	    
 	    if (monster_choice <= 100 && monster_choice > 65){
@@ -168,18 +169,21 @@ public class YoRPG {
         }
         catch ( IOException e ) { }
 
-        if ( i == 2 ){
+	//should give a 1% chance of healing to full HP
+	if (i >= 2 && i == randomzier){
+	  pat.heal();
+	}
+        else if ( i == 2 ){
           pat.specialize();
 	}
         else{
           pat.normalize();
 	}
 
-	monster_att = (int)(Math.random()*100);
-	if (monster_choice <= 15 && monster_att >= 5){
+	if (monster_choice <= 15 && randomzier >= 5){
 		smaug.specialize();
 	}
-	else if (monster_choice <= 15 && monster_att >= 5) {smaug.normalize();}
+	else if (monster_choice <= 15 && randomzier >= 5) {smaug.normalize();}
 	
         d1 = pat.attack( smaug );
         d2 = smaug.attack( pat );
