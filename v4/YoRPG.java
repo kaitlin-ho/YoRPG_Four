@@ -177,7 +177,7 @@ public class YoRPG {
 
 	monster_att = (int)(Math.random()*100);
 	if (monster_choice <= 15 && monster_att >= 5){
-		smaug.specialze();
+		smaug.specialize();
 	}
 	else {smaug.normalize();}
 	
