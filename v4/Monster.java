@@ -22,6 +22,8 @@ public class Monster extends Character {
     _attack = .4;
   }
 
+  
+  //so some monster types can also have specialized attacks
   public void specialize(){
     _hitPts = 150;
     _strength = 20 + (int)( Math.random() * 45 );
