@@ -6,7 +6,7 @@ public class Tank extends Protagonist {
     _maxHP = _hitPts;
     _strength = 20;
     _defense = 15;
-    _attack = 755;
+    _attack = .75;
   }
   
   public Tank(String name) {
