@@ -152,7 +152,7 @@ public class YoRPG {
 	    	smaug = new Giant();
 	    }
 	    
-	    else {smaugh = new Monster();}
+	    else {smaug = new Monster();}
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 
