@@ -8,9 +8,8 @@ public class Goblin extends Monster {
     _attack = .7;
   }
   
-  public Goblin(String name) {
-    this();
-    _name = name;
+  public Goblin() {
+    this();;
   }
   
   public static String about(){

@@ -8,9 +8,8 @@ public class Giant extends Monster {
     _attack = .6;
   }
   
-  public Giant(String name) {
+  public Giant() {
     this();
-    _name = name;
   }
   
   public static String about(){

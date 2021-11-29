@@ -8,9 +8,8 @@ public class Zombie extends Monster {
     _attack = .5;
   }
   
-  public Zombie(String name) {
+  public Zombie() {
     this();
-    _name = name;
   }
   
   public static String about(){
