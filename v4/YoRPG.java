@@ -170,7 +170,7 @@ public class YoRPG {
         catch ( IOException e ) { }
 
 	//should give a 1% chance of healing to full HP
-	if (i >= 2 && i == randomzier){
+	if (i ==3){
 	  pat.heal();
 	}
         else if ( i == 2 ){
