@@ -3,7 +3,7 @@
  * APCS
  * L01: An Adventurer is You!
  * 2021-11-29
- * time spent: 0.2 hr
+ * time spent: 0.5 hr
  *
  * DISCO:
  * 
@@ -13,6 +13,7 @@
  OUR DRIVER MODS:
  - Implemented different Monster classes and their appearance.
  - Gave Giant a specialized attack (the other monsters do not have this) that has a 5% chance of triggering. 
+ - Protagonist has a small (1%) chance to heal themself each turn. Stats stay the same during the healing.
  
  **********************************************/
 
@@ -76,6 +77,78 @@ public class YoRPG {
 	    difficulty = Integer.parseInt( in.readLine() );
     }
     catch ( IOException e ) { }
+
+    // LEARN ABOUT CLASSES AND MONSTERS
+
+    boolean isSmart = false;
+    int manualChoice = 0;
+    String wantsToBeSmart = "";
+
+    s = "\nWould thy like to read about the different classes and monsters?";
+    s += "\ty: Yes, of course!\n";
+    s += "\tn: No, manuals are lame.\n";
+    s += "Selection: ";
+    System.out.print(s);
+
+    try { 
+      wantsToBeSmart = in.readLine();
+      if (wantsToBeSmart.equals("y")) {
+        isSmart = true;
+        System.out.println("Yes");
+    }
+      if (wantsToBeSmart.equals("n")) {
+        isSmart = false;
+      }
+    }
+    catch (IOException e) { }
+
+    while (isSmart) {
+
+      s = "\nWhat would you like to learn more about?\n";
+      s += "\t=== Classes ===\n";
+      s += "\t1: Mage\n";
+      s += "\t2: Tank\n";
+      s += "\t3: Brawler\n";
+      s += "\t=== Monsters ===\n";
+      s += "\t4: Zombie\n";
+      s += "\t5: Goblin\n";
+      s += "\t6: Giant\n";
+      s += "\t=== Other ===\n";
+      s += "\t7: Close manual\n";
+      s += "Selection: ";
+      System.out.print(s);
+
+      try {
+        manualChoice = Integer.parseInt(in.readLine());
+      }
+      catch (IOException e) { }
+
+      s = "\n";
+      if (manualChoice == 1) {
+        s += "Mage: " + Mage.about();
+      }
+      if (manualChoice == 2) {
+        s += "Tank: " + Tank.about();
+      }
+      if (manualChoice == 3) {
+        s += "Brawler: " + Brawler.about();
+      }
+      if (manualChoice == 4) {
+        s += "Zombie: " + Zombie.about();
+      }
+      if (manualChoice == 5) {
+        s += "Goblin: " + Goblin.about();
+      }
+      if (manualChoice == 6) {
+        s += "Giant: " + Giant.about();
+      }
+      if (manualChoice == 7) {
+        isSmart = false;
+      }
+
+      System.out.println(s);
+
+    } 
 
 	  
     // CHOOSING CLASS
