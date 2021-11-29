@@ -170,9 +170,10 @@ public class YoRPG {
         catch ( IOException e ) { }
 
 	//should give a 1% chance of healing to full HP
-	if (i == 3){
+	if (i >= 2 && i == randomzier){
 	  pat.heal();
-	  System.out.println("Lucky! You found a healing potion.");
+	  System.out.println("Lucky! You found a healing potion."); //At first it was just to 
+		//check if this worked, but it's a fun message
 	}
         else if ( i == 2 ){
           pat.specialize();
