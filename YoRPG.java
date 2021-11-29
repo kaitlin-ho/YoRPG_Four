@@ -2,19 +2,15 @@
  * Four: Kaitlin Ho, Jing Yi Feng, Fang Chen
  * APCS
  * L01: An Adventurer is You!
- * 2021-11-23
- * time spent: 2 hr
- *
- * DISCO:
- * 00: You can initialize a variable of a different type with an object created from a subclass of that type.
- * 
- * QCC:
- * 00: How can we implement the different Monster subclasses into the newGame()? 
- *
+ * 2021-11-29
+ * time spent: 0.5 hr
+
  
  OUR DRIVER MODS:
- - Created Monster and Protagonist subclasses
- - Updated newClass() to add in role choices
+ - Implemented different Monster classes and their appearance.
+ - Gave Giant a specialized attack (the other monsters do not have this) that has a 5% chance of triggering. 
+ - Protagonist has a small (1%) chance to heal themself each turn. Stats stay the same during the healing.
+ - Added a player's manual to utilize the about methods of the protagonist and monster subclasses.
  
  **********************************************/
 
@@ -79,13 +75,84 @@ public class YoRPG {
     }
     catch ( IOException e ) { }
 
+    // LEARN ABOUT CLASSES AND MONSTERS
+
+    boolean isSmart = false;
+    int manualChoice = 0;
+    String wantsToBeSmart = "";
+
+    s = "\nWould thy like to read about the different classes and monsters?\n";
+    s += "\ty: Yes, of course!\n";
+    s += "\tn: No, manuals are lame.\n";
+    s += "Selection: ";
+    System.out.print(s);
+
+    try { 
+      wantsToBeSmart = in.readLine();
+      if (wantsToBeSmart.equals("y")) {
+        isSmart = true;
+    }
+      if (wantsToBeSmart.equals("n")) {
+        isSmart = false;
+      }
+    }
+    catch (IOException e) { }
+
+    while (isSmart) {
+
+      s = "\nWhat would you like to learn more about?\n";
+      s += "\t=== Classes ===\n";
+      s += "\t1: Mage\n";
+      s += "\t2: Tank\n";
+      s += "\t3: Brawler\n";
+      s += "\t=== Monsters ===\n";
+      s += "\t4: Zombie\n";
+      s += "\t5: Goblin\n";
+      s += "\t6: Giant\n";
+      s += "\t=== Other ===\n";
+      s += "\t7: Close manual\n";
+      s += "Selection: ";
+      System.out.print(s);
+
+      try {
+        manualChoice = Integer.parseInt(in.readLine());
+      }
+      catch (IOException e) { }
+
+      s = "";
+      if (manualChoice == 1) {
+        s += "\nMage: " + Mage.about();
+      }
+      if (manualChoice == 2) {
+        s += "\nTank: " + Tank.about();
+      }
+      if (manualChoice == 3) {
+        s += "\nBrawler: " + Brawler.about();
+      }
+      if (manualChoice == 4) {
+        s += "\nZombie: " + Zombie.about();
+      }
+      if (manualChoice == 5) {
+        s += "\nGoblin: " + Goblin.about();
+      }
+      if (manualChoice == 6) {
+        s += "\nGiant: " + Giant.about();
+      }
+      if (manualChoice == 7) {
+        isSmart = false;
+      }
+
+      System.out.println(s);
+
+    } 
+
 	  
     // CHOOSING CLASS
     s = "Choose your class:\n";
   	  s += "1: Mage\n";
   	  s += "2: Tank\n";
       s += "3: Brawler\n";
-  	  //add more
+  	  s += "Selection: ";
   	  System.out.print(s);
     	  
     try {
@@ -131,13 +198,33 @@ public class YoRPG {
   public boolean playTurn() {
     int i = 1;
     int d1, d2;
+    int monster_choice;
+    int randomzier;
 
     if ( Math.random() >= ( difficulty / 3.0 ) )
 	    System.out.println( "\nNothing to see here. Move along!" );
     else {
-	    System.out.println( "\nLo, yonder monster approacheth!" );
+	    System.out.print( "\nLo, yonder monster approacheth!" );
 
-	    smaug = new Monster();
+	    randomzier = (int)(Math.random()*100);
+	    monster_choice = (int)(Math.random()*100);
+	    
+	    if (monster_choice <= 100 && monster_choice > 65){
+	    	smaug = new Zombie();
+		System.out.println(" It's a Zombie!");
+	    }
+	    
+	    if (monster_choice > 15 && monster_choice <= 65){
+	    	smaug = new Goblin();
+		System.out.println(" It's a Goblin!");
+	    }
+	    
+	    if (monster_choice <= 15){
+	    	smaug = new Giant();
+		System.out.println(" It's a Giant!");
+	    }
+	    
+	    //else {smaug = new Monster();}
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 
@@ -151,11 +238,24 @@ public class YoRPG {
         }
         catch ( IOException e ) { }
 
-        if ( i == 2 )
+	//should give a 1% chance of healing to full HP
+	if (i >= 2 && i == randomzier){
+	  pat.heal();
+	  System.out.println("Lucky! You found a healing potion."); //At first it was just to 
+		//check if this worked, but it's a fun message
+	}
+        else if ( i == 2 ){
           pat.specialize();
-        else
+	}
+        else{
           pat.normalize();
+	}
 
+	if (monster_choice <= 15 && randomzier >= 5){
+		smaug.specialize();
+	}
+	else if (monster_choice <= 15 && randomzier >= 5) {smaug.normalize();}
+	
         d1 = pat.attack( smaug );
         d2 = smaug.attack( pat );
 

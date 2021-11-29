@@ -1,30 +1,25 @@
-ublic class Giant extends Monster {
+public class Giant extends Monster {
 
   //stats initialization
   public Giant(){
-    _hitPts = 50;
+    _hitPts = 100;
     _strength = 20;
-    _defense = 100;
-    _attack = 10;
-  }
-  
-  public Giant(String name) {
-    this();
-    _name = name;
+    _defense = 10;
+    _attack = .6;
   }
   
   public static String about(){
-    return "insert stuff";
+    return "High HP, low defense, high damage. Is luckier than the other monsters.";
   }
   
   public void specialize(){
-    _hitPts += 25;
+    _attack = .99;
     _defense = 50;
   }
   
   public void normalize(){
-    _defense = 20
+    _attack = .6;
+    _defense = 10;
   }
-  
 
 }

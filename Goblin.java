@@ -3,29 +3,14 @@ public class Goblin extends Monster {
   //stats initialization
   public Goblin(){
     _hitPts = 50;
-    _strength = 20;
-    _defense = 100;
-    _attack = 10;
+    _strength = 60;
+    _defense = 15;
+    _attack = .7;
   }
-  
-  public Goblin(String name) {
-    this();
-    _name = name;
-  }
-  
+
   public static String about(){
-    return "insert stuff";
+    return "Low HP, low defense, high damage.";
   }
-  
-  public void specialize(){
-    _hitPts += 25;
-    _defense = 50;
-  }
-  
-  public void normalize(){
-    _defense = 20
-  }
-  
 
 }
 

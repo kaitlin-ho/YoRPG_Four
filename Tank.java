@@ -3,6 +3,7 @@ public class Tank extends Protagonist {
   //stats initialization
   public Tank(){
     _hitPts = 125;
+    _maxHP = _hitPts;
     _strength = 20;
     _defense = 20;
     _attack = .5;

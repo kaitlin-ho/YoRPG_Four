@@ -1,30 +1,15 @@
-ublic class Zombie extends Monster {
+public class Zombie extends Monster {
 
   //stats initialization
   public Zombie(){
-    _hitPts = 50;
+    _hitPts = 100;
     _strength = 20;
-    _defense = 100;
-    _attack = 10;
-  }
-  
-  public Zombie(String name) {
-    this();
-    _name = name;
+    _defense = 11;
+    _attack = .5;
   }
   
   public static String about(){
-    return "insert stuff";
+    return "Average HP, average defense, low damage.";
   }
-  
-  public void specialize(){
-    _hitPts += 25;
-    _defense = 50;
-  }
-  
-  public void normalize(){
-    _defense = 20
-  }
-  
 
 }

@@ -5,7 +5,7 @@
 public class Protagonist extends Character {
 
   // ~~~~~~~~~~~ INSTANCE VARIABLES ~~~~~~~~~~~
-  private String _name = "J. Doe";
+  protected String _name = "J. Doe";
   // All inherited variables from Character
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -17,6 +17,7 @@ public class Protagonist extends Character {
     **/
   public Protagonist() {
       _hitPts = 125;
+      _maxHP = _hitPts;
       _strength = 100;
       _defense = 40;
       _attack = .4;
@@ -54,6 +55,10 @@ public class Protagonist extends Character {
   public void normalize() {
       _attack = .4;
       _defense = 40;
+  }
+  
+  public void heal(){
+      _hitPts = _hitPts + (_maxHP - _hitPts);
   }
 
 }//end class Protagonist

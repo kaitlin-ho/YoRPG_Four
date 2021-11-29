@@ -3,6 +3,7 @@ public class Brawler extends Protagonist {
   //stats initialization
   public Brawler(){
     _hitPts = 100;
+    _maxHP = _hitPts;
     _strength = 50;
     _defense = 12;
     _attack = .6;

@@ -81,7 +81,7 @@ public class YoRPG {
     int manualChoice = 0;
     String wantsToBeSmart = "";
 
-    s = "\nWould thy like to read about the different classes and monsters?";
+    s = "\nWould thy like to read about the different classes and monsters?\n";
     s += "\ty: Yes, of course!\n";
     s += "\tn: No, manuals are lame.\n";
     s += "Selection: ";
@@ -91,7 +91,6 @@ public class YoRPG {
       wantsToBeSmart = in.readLine();
       if (wantsToBeSmart.equals("y")) {
         isSmart = true;
-        System.out.println("Yes");
     }
       if (wantsToBeSmart.equals("n")) {
         isSmart = false;
@@ -120,24 +119,24 @@ public class YoRPG {
       }
       catch (IOException e) { }
 
-      s = "\n";
+      s = "";
       if (manualChoice == 1) {
-        s += "Mage: " + Mage.about();
+        s += "\nMage: " + Mage.about();
       }
       if (manualChoice == 2) {
-        s += "Tank: " + Tank.about();
+        s += "\nTank: " + Tank.about();
       }
       if (manualChoice == 3) {
-        s += "Brawler: " + Brawler.about();
+        s += "\nBrawler: " + Brawler.about();
       }
       if (manualChoice == 4) {
-        s += "Zombie: " + Zombie.about();
+        s += "\nZombie: " + Zombie.about();
       }
       if (manualChoice == 5) {
-        s += "Goblin: " + Goblin.about();
+        s += "\nGoblin: " + Goblin.about();
       }
       if (manualChoice == 6) {
-        s += "Giant: " + Giant.about();
+        s += "\nGiant: " + Giant.about();
       }
       if (manualChoice == 7) {
         isSmart = false;
@@ -153,7 +152,7 @@ public class YoRPG {
   	  s += "1: Mage\n";
   	  s += "2: Tank\n";
       s += "3: Brawler\n";
-  	  //add more
+  	  s += "Selection: ";
   	  System.out.print(s);
     	  
     try {
@@ -205,24 +204,24 @@ public class YoRPG {
     if ( Math.random() >= ( difficulty / 3.0 ) )
 	    System.out.println( "\nNothing to see here. Move along!" );
     else {
-	    System.out.println( "\nLo, yonder monster approacheth!" );
+	    System.out.print( "\nLo, yonder monster approacheth!" );
 
 	    randomzier = (int)(Math.random()*100);
 	    monster_choice = (int)(Math.random()*100);
 	    
 	    if (monster_choice <= 100 && monster_choice > 65){
 	    	smaug = new Zombie();
-		System.out.print(" It's a Zombie!");
+		System.out.println(" It's a Zombie!");
 	    }
 	    
 	    if (monster_choice > 15 && monster_choice <= 65){
 	    	smaug = new Goblin();
-		System.out.print(" It's a Goblin!");
+		System.out.println(" It's a Goblin!");
 	    }
 	    
 	    if (monster_choice <= 15){
 	    	smaug = new Giant();
-		System.out.print(" It's a Giant!");
+		System.out.println(" It's a Giant!");
 	    }
 	    
 	    //else {smaug = new Monster();}
