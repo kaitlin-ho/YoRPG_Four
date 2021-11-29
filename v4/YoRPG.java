@@ -12,7 +12,7 @@
  
  OUR DRIVER MODS:
  - Implemented different Monster classes and their appearance.
- - Giant has a specialized attack (the other monsters do not) that has a 5% chance of triggering. 
+ - Gave Giant a specialized attack (the other monsters do not have this) that has a 5% chance of triggering. 
  
  **********************************************/
 
