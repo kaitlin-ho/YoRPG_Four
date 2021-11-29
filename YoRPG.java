@@ -142,13 +142,13 @@ public class YoRPG {
         isSmart = false;
       }
 
-      System.out.println(s);
+      System.out.print(s);
 
     } 
 
 	  
     // CHOOSING CLASS
-    s = "Choose your class:\n";
+    s = "\nChoose your class:\n";
   	  s += "1: Mage\n";
   	  s += "2: Tank\n";
       s += "3: Brawler\n";
