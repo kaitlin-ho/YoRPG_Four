@@ -141,18 +141,18 @@ public class YoRPG {
 	    monster_choice = (int)(Math.random()*3);
 	    
 	    if (monster_choice == 0){
-	    	smaug = new Zombie;
+	    	smaug = new Zombie();
 	    }
 	    
 	    if (monster_choice == 1){
-	    	smaug = new Goblin;
+	    	smaug = new Goblin();
 	    }
 	    
 	    if (monster_choice == 2){
 	    	smaug = new Giant();
 	    }
 	    
-	    else {smaugh = new Monster;}
+	    else {smaugh = new Monster();}
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 
