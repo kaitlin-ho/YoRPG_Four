@@ -129,6 +129,7 @@ public class YoRPG {
     int i = 1;
     int d1, d2;
     int monster_choice;
+    int monster_att;
 
     if ( Math.random() >= ( difficulty / 3.0 ) )
 	    System.out.println( "\nNothing to see here. Move along!" );
@@ -171,6 +172,11 @@ public class YoRPG {
         else
           pat.normalize();
 
+	monster_att = int(Math.random()*100);
+	if (monster_choice <= 15 && monster_att >= 5){
+		smaug.specialze();
+	}
+	
         d1 = pat.attack( smaug );
         d2 = smaug.attack( pat );
 
