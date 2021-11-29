@@ -138,7 +138,8 @@ public class YoRPG {
     else {
 	    System.out.println( "\nLo, yonder monster approacheth!" );
 
-	    monster_choice = int(Math.random()*3);
+	    monster_choice = (int)(Math.random()*3);
+	    
 	    if (monster_choice == 0){
 	    	smaug = new Zombie;
 	    }
