@@ -176,6 +176,7 @@ public class YoRPG {
 	if (monster_choice <= 15 && monster_att >= 5){
 		smaug.specialze();
 	}
+	else {smaug.normalize();}
 	
         d1 = pat.attack( smaug );
         d2 = smaug.attack( pat );
