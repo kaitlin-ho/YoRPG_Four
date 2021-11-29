@@ -3,7 +3,7 @@
  * APCS
  * L01: An Adventurer is You!
  * 2021-11-29
- * time spent: 0.2 hr
+ * time spent: 0.5 hr
  *
  * DISCO:
  * 
@@ -13,6 +13,7 @@
  OUR DRIVER MODS:
  - Implemented different Monster classes and their appearance.
  - Gave Giant a specialized attack (the other monsters do not have this) that has a 5% chance of triggering. 
+ - Protagonist has a small (1%) chance to heal themself each turn. Stats stay the same during the healing.
  
  **********************************************/
 
