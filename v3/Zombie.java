@@ -12,15 +12,5 @@ public class Zombie extends Monster {
     return "average HP, average defense, low damage";
   }
   
-  public void specialize(){
-    _attack = .5;
-    _defense = 50;
-  }
-  
-  public void normalize(){
-    _attack = .5;
-    _defense = 11;
-  }
-  
 
 }
