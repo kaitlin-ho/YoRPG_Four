@@ -4,8 +4,8 @@ public class Tank extends Protagonist {
   public Tank(){
     _hitPts = 125;
     _strength = 20;
-    _defense = 20;
-    _attack = .5;
+    _defense = 15;
+    _attack = .75;
   }
   
   public Tank(String name) {
