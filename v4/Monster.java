@@ -22,6 +22,20 @@ public class Monster extends Character {
     _attack = .4;
   }
 
+  public void specialize{
+    _hitPts = 150;
+    _strength = 20 + (int)( Math.random() * 45 );
+    _defense = 20;
+    _attack = .4;
+  }
+  
+  public void normalize{
+    _hitPts = 150;
+    _strength = 20 + (int)( Math.random() * 45 );
+    _defense = 20;
+    _attack = .4;
+  }
+  
   // Inheritted Methods:
   // int getDefense()
   // boolean isAlive() 
