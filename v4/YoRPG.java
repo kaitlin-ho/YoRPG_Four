@@ -131,13 +131,27 @@ public class YoRPG {
   public boolean playTurn() {
     int i = 1;
     int d1, d2;
+    int monster_choice;
 
     if ( Math.random() >= ( difficulty / 3.0 ) )
 	    System.out.println( "\nNothing to see here. Move along!" );
     else {
 	    System.out.println( "\nLo, yonder monster approacheth!" );
 
-	    smaug = new Monster();
+	    monster_choice = int(Math.random()*3);
+	    if (monster_choice == 0){
+	    	smaug = new Zombie;
+	    }
+	    
+	    if (monster_choice == 1){
+	    	smaug = new Goblin;
+	    }
+	    
+	    if (monster_choice == 2){
+	    	smaug = new Giant();
+	    }
+	    
+	    else {smaugh = new Monster;}
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 
