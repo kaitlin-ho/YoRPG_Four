@@ -11,16 +11,5 @@ public class Zombie extends Monster {
   public static String about(){
     return "Average HP, average defense, low damage.";
   }
-  
-  public void specialize(){
-    _attack = .5;
-    _defense = 50;
-  }
-  
-  public void normalize(){
-    _attack = .5;
-    _defense = 11;
-  }
-  
 
 }
