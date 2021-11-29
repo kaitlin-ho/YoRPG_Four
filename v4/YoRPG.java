@@ -14,6 +14,7 @@
  - Implemented different Monster classes and their appearance.
  - Gave Giant a specialized attack (the other monsters do not have this) that has a 5% chance of triggering. 
  - Protagonist has a small (1%) chance to heal themself each turn. Stats stay the same during the healing.
+ - Added a player's manual to utilize the about methods of the protagonist and monster subclasses.
  
  **********************************************/
 
