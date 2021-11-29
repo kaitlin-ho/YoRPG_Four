@@ -1,4 +1,4 @@
-ublic class Zombie extends Monster {
+public class Zombie extends Monster {
 
   //stats initialization
   public Zombie(){

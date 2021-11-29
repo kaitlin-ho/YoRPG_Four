@@ -1,4 +1,4 @@
-ublic class Giant extends Monster {
+public class Giant extends Monster {
 
   //stats initialization
   public Giant(){
